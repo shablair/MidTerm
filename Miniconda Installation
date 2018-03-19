@@ -1,0 +1,22 @@
+installation of Miniconda
+
+visit: https://conda.io/miniconda.html
+
+Download linux Python 3.6, 64-bit version. 
+
+Find location of downloaded file: which linux Python 3.6
+
+Make sure all associated files are moved to Downloads folder: mv [specific linux python file name] Downloads
+
+Then, within downloads folder set up the bioconda channels, type:
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+
+Then you are able to install available packages, type:
+conda install -c bioconda bwa
+conda install -c bioconda fastqc
+conda install -c bioconda trim-galore
+
+
+(used https://bioconda.github.io/ as a reference)
