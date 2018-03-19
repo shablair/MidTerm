@@ -26,11 +26,19 @@ Choose create new disk when prompted, VDI, Dynamically allocated, give it the na
 
 power on the workstation: select system, then click the green start arrow
 
-Create a user account.
-when prompted create files
+start a fedora workstation, then install to hard drive.
+
+click create, then installation station.
+
+check/ select ATA Vbox hard disk option, custom storage config., then done.
+
+when prompted create files by clicking '+'
+enter mount point @ desired capacity:
 /boot @ 250M
 swap @16.75GM
 / @8GM
+
+Create a user account & root account.
 
 quit, shut down and restart workstation, after you remove the optical disk within the settings: 
 Go to System, under motherboard:
