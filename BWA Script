@@ -1,1 +1,21 @@
+Steps:
+Create a BWA index in the genomic reference
+Align the reads in the input file against the genomic reference
+Convert the alignment into a .sam file
+Convert the .sam file into a .bam file and sort it
+Detect and remove duplicates
+Index the results
 
+In the terminal type:
+
+gedit Problem2.sh
+Type:
+#!/Downloads/Texts
+bwa samse -f bwa_aln_alignments.sam index_prefix bwa_aln_alignments_pair_1.sai bwa_aln_alignments_pair_2.sai input_reads_pair_1.fasta input_reads_pair_2.fasta
+
+bwa index reference.fa
+bwa aln -I -t 8 reference.fa reads.txt > out.sai
+bwa samse reference.fa out.sai reads.txt > out.sam
+samtools view -bSu out.sam | samtools sort -  out.sorted
+samtools index out.dedupe.bam
+samtools mpileup -uf reference.fa out.dedupe.bam | /apps/SAMTOOLS/0.1.19/bin/bcftools view -bvcg - > out.bcf
