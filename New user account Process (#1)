@@ -13,8 +13,6 @@ Hard Disk File Type: VDI
 
 Once created workstation, click on it once and enter its settings
 
-Go to System, under motherboard:
-Floppy & Hard disk should be the only boot order checked
 Go to Processor:
 change to 2 CPUs
 
@@ -28,3 +26,13 @@ Choose create new disk when prompted, VDI, Dynamically allocated, give it the na
 
 power on the workstation: select system, then click the green start arrow
 
+Create a user account.
+when prompted create files
+/boot @ 250M
+swap @16.75GM
+/ @8GM
+
+quit, shut down and restart workstation, after you remove the optical disk within the settings: 
+Go to System, under motherboard:
+Floppy & Hard disk should be the only boot order checked
+Follow 1A & 1B
