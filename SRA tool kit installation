@@ -1,0 +1,6 @@
+Go to: https://www.ncbi.nlm.nih.gov/sra/docs/toolkitsoft/
+Download SRA Toolkit CentOS linux 64 bit
+
+Find the sra toolkit ".tar.gz" file for exact nomenclature. Type: which sra
+within the terminal type:
+tar vxzf "[exact sra file name]".tar.gz
