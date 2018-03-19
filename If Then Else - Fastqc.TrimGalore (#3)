@@ -1,0 +1,15 @@
+In Terminal, type gedit problem3
+
+Copy & paste this script:
+ 
+ #!/bin/bash
+ for file in ~/Downloads
+            if [ sequence > 40bp]; then
+               echo expression evaluated as true
+            else
+               run 
+            fi
+           
+Save file and close.
+In terminal, type: chmod 755 problem3
+then: bash problem3
