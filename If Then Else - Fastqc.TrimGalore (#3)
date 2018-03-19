@@ -10,11 +10,17 @@ Copy & paste this script:
  
  #!/bin/bash
  for file in ~/Downloads
-            if [ sequence > 40bp]; then
-               echo expression evaluated as true
-            else
-               run 
-            fi
+ 
+count=99
+   if [ $count -eq 100 ]
+then
+  echo "Count is 100" run trim galore
+elif [ $count -gt 100 ./trimgalore .fastq]
+then
+  echo "Count is greater than 100"
+else
+  echo "Count is less than 100"
+fi
            
 Save file and close.
 In terminal, type: chmod 755 problem3
