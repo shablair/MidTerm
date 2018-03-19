@@ -1,0 +1,30 @@
+Visit https://www.virtualbox.org/
+
+Download & install Virtual box 5.2
+
+create a new
+Give it a name
+Type: linux
+Version: fedora (64-bit)
+
+Memory Size: 2000MB
+create a virtual hard disk now
+Hard Disk File Type: VDI
+
+Once created workstation, click on it once and enter its settings
+
+Go to System, under motherboard:
+Floppy & Hard disk should be the only boot order checked
+Go to Processor:
+change to 2 CPUs
+
+Go to Storage
+delete existing disk and floppy files
+click "Controller: IDE", select the disk option to the right
+Select choose disk, Find and select in your documents fedora-workstation-live-x86_64-27-1.6
+If not able to find, go to usegalaxy.org for another copy of the file
+Click "Controller: SATA", select the floppy option to the right
+Choose create new disk when prompted, VDI, Dynamically allocated, give it the name of your linux workstation & type in 25 GB and create
+
+power on the workstation: select system, then click the green start arrow
+
