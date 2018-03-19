@@ -1,3 +1,9 @@
+Go to internet browser.
+
+Download files from galaxy to documents folder.
+
+Return to terminal
+
 In Terminal, type gedit problem3
 
 Copy & paste this script:
@@ -13,3 +19,5 @@ Copy & paste this script:
 Save file and close.
 In terminal, type: chmod 755 problem3
 then: bash problem3
+
+in the terminal, type: trim galore -q 30 --length 18 --fastqc phiXs_8_1_sequence.100k.fastq
