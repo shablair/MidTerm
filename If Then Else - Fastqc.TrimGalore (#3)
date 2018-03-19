@@ -20,4 +20,4 @@ Save file and close.
 In terminal, type: chmod 755 problem3
 then: bash problem3
 
-in the terminal, type: trim galore -q 30 --length 18 --fastqc phiXs_8_1_sequence.100k.fastq
+in the terminal, type: trim_galore -q 30 --length 18 --fastqc phiXs_8_1_sequence.100k.fastq
